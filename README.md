@@ -24,5 +24,5 @@ We will be using CPP and Python to code out the algorithms and will be using HTM
 ```bash
     1) git init -initializes the git repository from the GitHub. 
     2) git clone -Clone the repository to your local machine
-      (git clone https://github.com/<your-github-username>/LetsUpgrade/Algorithmic-Treasure.git)
+      (git clone https://github.com/<your-github-username>/Algorithmic-Treasure.git)
 ```    
