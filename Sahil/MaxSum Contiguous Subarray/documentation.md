@@ -53,4 +53,36 @@ The subarray [1, 2, 3, 4] has the **maximum possible sum of 10**.
  The subarray [4,-1,2,1] has the **maximum possible sum of 6**.
  
  
- ### Solution:
+ 
+ ## Solution:-
+ 
+**Bruteforce Approach :** 
+
+      1) Use two loops. 
+      2) The outer loop picks the beginning element,
+         the inner loop finds the maximum possible sum with first element picked by outer loop 
+         and compares this maximum with the overall maximum.
+      3) At last, return the overall maximum.
+       
+>>**Time complexity :** *O(n^2)*
+
+**Kadane’s Algorithm :**
+ 
+       MaxSum(a[],size)
+         1) Initialize:
+               max = 0
+               sum = 0
+         2) Loop for each element of the array
+              (a) sum = sum + a[i]
+              (b) if(sum<0) then 
+                   initialize sum=0
+              (c) else if(max<sum)
+                    then max=sum
+         3) return max
+         
+>>**Time Complexity:** *O(n)* 
+
+
+>>**Algorithmic Paradigm:** *Dynamic Programming*
+
+***[Reference](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/)***
