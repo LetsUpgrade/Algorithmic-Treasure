@@ -31,9 +31,9 @@ Another possible answer : [4, 1, 3, 2]
 
 ### Approach
 
-> We can first sort array and then swap all adjacent array elements so that it forms a wave pattern. This solution will take `O(nlogn)` time if sorting algorithms like Merge Sort are used and time complexity will increase if time costlier algorithms like Insertion Sort are used.
+We can first sort array and then swap all adjacent array elements so that it forms a wave pattern. This solution will take `O(nlogn)` time if sorting algorithms like Merge Sort are used and time complexity will increase if time costlier algorithms like Insertion Sort are used.
 
-> We'd have done only swapping of adjacent elements in `O(n)` time and it would have satisfied first condition of this problem but this solution would fail in second condition i.e., Lexicographically smallest answer which could only be achieved by sorting the array first and then swapping. 
+We'd have done only swapping of adjacent elements in `O(n)` time and it would have satisfied first condition of this problem but this solution would fail in second condition i.e., Lexicographically smallest answer which could only be achieved by sorting the array first and then swapping. 
 
 ### Pseudo Code
 
@@ -49,7 +49,7 @@ function wave ( Arguement givenArray ){
 }
 ```
 
-> ### C++ Solution
+> ### C++ Function Implementation
 
 ```cpp
 vector<int> wave(vector<int> &A) {
