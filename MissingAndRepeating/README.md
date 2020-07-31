@@ -26,7 +26,7 @@ Example 2
 3
 2 2 1
 ```
-> > 1 2 1<br>
+> > 1 2<br>
 > > 2 3
 #### Solution<br>
 In the above program we are supposed to find the duplicate number and the number missing the the range of N with a time complexity not exceeding O(n). The pseudocode for the above program is as follows:
