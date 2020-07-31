@@ -85,4 +85,4 @@ The subarray [1, 2, 3, 4] has the **maximum possible sum of 10**.
 
 >>**Algorithmic Paradigm:** *Dynamic Programming*
 
-***[Reference](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/)***
+***[For Reference](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/)***
