@@ -57,6 +57,6 @@ To generate a value in a line, we can use the previously stored values from arra
             3)End of outer loop
             4)Exit
            
+ >>Time complexity : **O(n^2)**  & Space complexity : **O(n^2)**.
 
->>Time complexity : O(n^2)  & Space complexity : O(n^2).
-
+***[For Reference](https://www.interviewbit.com/problems/pascal-triangle/)***
