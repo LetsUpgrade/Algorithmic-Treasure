@@ -1,0 +1,4 @@
+Sort the Array. 
+Swap the elements.
+if the even element is not 0 and its not greater then odd elements:
+then swap.
