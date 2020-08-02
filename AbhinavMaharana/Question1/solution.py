@@ -1,5 +1,5 @@
 class Solution:
-    
+    #function
     def plusOne(self,A):
         val = 1; 
         for i in range(len(A),0,-1):
