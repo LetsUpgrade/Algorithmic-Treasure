@@ -56,23 +56,36 @@ The subarray [1, 2, 3, 4] has the **maximum possible sum of 10**.
  
  ## Solution:-
  
-**Bruteforce Approach :** 
+**Bruteforce Approach :**  Using 3 loops.
+        
+        1) for loop from 0 to n-1:
+           (a) for loop from i to n-1:
+               (i) set sum =0
+               (ii) for loop from i to j:
+                     sum+=A[k]
+                     if(sum>max) then max=sum
+        2) End of all loops.
+        3) return max
+      
+>>**Time complexity :** *O(n^3)*
 
-      1) Use two loops. 
-      2) The outer loop picks the beginning element,
-         the inner loop finds the maximum possible sum with first element picked by outer loop 
-         and compares this maximum with the overall maximum.
-      3) At last, return the overall maximum.
-       
->>**Time complexity :** *O(n^2)*
+**Cumulative Sum Approach:** 
+We can replace the innermost loop in bruteforce algorithm with array of sum such as:
+         
+         Sum=TotalSum[j]-TotalSum[i]+a[i]
+         
+         where, 
+               TotalSum is the sum of all subarray with same size as of input array.
+               TotalSum[i]=TotalSum[i-1]+a[i]
+         
 
 **Kadane’s Algorithm :**
  
        MaxSum(a[],size)
          1) Initialize:
-               max = 0
-               sum = 0
-         2) Loop for each element of the array
+               max = a[0]
+               sum = a[0]
+         2) Loop for each element of the array except 0th element
               (a) sum = sum + a[i]
               (b) if(sum<0) then 
                    initialize sum=0
