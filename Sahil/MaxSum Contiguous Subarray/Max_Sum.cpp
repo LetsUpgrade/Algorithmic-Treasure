@@ -2,9 +2,9 @@
 using namespace std;
 
 int Max_sum(int a[],int size){
-  int sum=0;
-  int max=0;
-  for(int j=0;j<size;j++)
+  int sum=a[0];
+  int max=a[0];
+  for(int j=1;j<size;j++)
   { sum+=a[j];
     if(sum<0)
     sum=0;
