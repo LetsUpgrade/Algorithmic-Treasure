@@ -87,11 +87,8 @@ We can replace the innermost loop in bruteforce algorithm with array of sum such
                max = a[0]
                sum = a[0]
          2) Loop for each element of the array except 0th element
-              (a) sum = sum + a[i]
-              (b) if(sum<0) then 
-                   initialize sum=0
-              (c) else if(max<sum)
-                    then max=sum
+              (a)sum = MAX(a[i],sum+a[i])
+              (b)max = MAX(max,sum)
          3) return max
          
 >>**Time Complexity:** *O(n)* 
