@@ -77,7 +77,8 @@ We can replace the innermost loop in bruteforce algorithm with array of sum such
          where, 
                TotalSum is the sum of all subarray with same size as of input array.
                TotalSum[i]=TotalSum[i-1]+a[i]
-         
+               
+>>**Time complexity :** *O(n^2)*         
 
 **Kadane’s Algorithm :**
  
