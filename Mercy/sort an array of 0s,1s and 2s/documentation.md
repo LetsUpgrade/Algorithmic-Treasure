@@ -41,9 +41,9 @@ Given an array A[] consisting 0s, 1s and 2s. The task is to write a function tha
             print(k)
             
 ## Complexity Analysis:
-       #### Time Complexity: O(n). 
+       Time Complexity: O(n). 
        Only one traversal of the array is needed.
-       #### Space Complexity: O(1). 
+       Space Complexity: O(1). 
        No extra space is required.
 
 ## Algorithm:<br>
