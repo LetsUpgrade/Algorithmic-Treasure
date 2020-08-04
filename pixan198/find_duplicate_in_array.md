@@ -62,5 +62,60 @@ int repeatedNumber(const vector<int> &A) {
 
 ### Optimized Approach (Space Optimization)
 
+Approach uses Floyd's Tortoise and Hare Algorithm
 
+- Form following nested sequence using function `f(x) = A[x]` starting with index `x = 0`
+```
+A[0], A[A[0]], A[A[A[0]]], A[A[A[A[0]]]],. . . . . . . .
+```
+- Each member in the sequence is an element of A[]
+- This sequence will form a cycle if there is a duplicate element in the array with duplicate element entry point to the cycle
 
+##### Sample Array
+<img src="https://pixan198.github.io/images/array.svg" />
+
+##### Cycle formed in array A[]
+<img src="https://pixan198.github.io/images/cycle.svg" />
+
+traversal starts from `A[0] = 3` and it enters cycle through `A[3] = 4`
+
+The Algorithm has two traversal variables called Hare and Tortoise, Hare being fast and Tortoise slow
+```
+Hare = A[A[Hare]]
+
+Tortoise = A[Tortoise]
+```
+- Hare is fast so it enters the cycle first and Tortoise enters later
+- Since, Hare is fast so it completes cycle before Tortoise and itersects with it at some point middle in array
+- Now, move tortoise to the starting point of sequence and leave Hare within the cycle
+- Both move with same speed i.e., `Hare = A[Hare]` and `Tortoise = A[Tortoise]`
+- They will intersect at duplicate element
+- Stop when they intersect and you have the duplicate element
+
+#### C++ Function Implementation
+
+```cpp
+int repeatedNumberOptimized(int arr[]) 
+{ 
+    int Tortoise = arr[0]; 
+    int Hare = arr[0]; 
+    
+    while (1) { 
+  
+        Tortoise = arr[Tortoise]; 
+        Hare = arr[arr[Hare]];
+        
+        if (Tortoise == Hare) 
+            break; 
+    } 
+  
+    Tortoise = arr[0]; 
+    
+    while (Tortoise != Hare) { 
+        Tortoise = arr[Tortoise]; 
+        Hare = arr[Hare]; 
+    } 
+   
+    return Tortoise; 
+} 
+```
