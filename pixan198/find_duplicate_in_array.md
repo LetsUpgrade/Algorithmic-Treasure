@@ -74,7 +74,7 @@ A[0], A[A[0]], A[A[A[0]]], A[A[A[A[0]]]],. . . . . . . .
 ##### Sample Array
 <img src="https://pixan198.github.io/images/array.svg" />
 
-##### Cycle formed in array A[]
+##### Cycle formed in array A[ ]
 <img src="https://pixan198.github.io/images/cycle.svg" />
 
 traversal starts from `A[0] = 3` and it enters cycle through `A[3] = 4`
@@ -92,6 +92,30 @@ Tortoise = A[Tortoise]
 - They will intersect at duplicate element
 - Stop when they intersect and you have the duplicate element
 
+#### Pseudo Code
+```
+function repeatedNumber ( Arguement givenArray ){
+    
+    Initialize Tortoise and Hare Variables with first element of givenArray
+    
+    Loop until we find the intersection point of Hare and Tortoise
+    
+        define speed of Hare and Tortoise
+    
+        Hare = givenArray[givenArray[Hare]]
+        Tortoise = givenArray[Tortoise]
+    
+        Exit Loop when Hare == Tortoise
+    
+    Move Tortoise to start of givenArray
+    
+    Loop until Tortoise is not equal to Hare
+        Exit Loop when Tortoise == Hare
+    
+    
+    return -1
+}
+```
 #### C++ Function Implementation
 
 ```cpp
