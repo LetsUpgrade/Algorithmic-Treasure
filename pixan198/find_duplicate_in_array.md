@@ -113,7 +113,7 @@ function repeatedNumber ( Arguement givenArray ){
         Exit Loop when Tortoise == Hare
     
     
-    return -1
+    return Tortoise
 }
 ```
 #### C++ Function Implementation
