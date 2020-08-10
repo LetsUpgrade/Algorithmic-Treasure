@@ -34,4 +34,38 @@ A naive approach could be to sort the linked list using any sorting algorithm, f
 ### Time Optimized Approach
 
 As you can see the sample I/O input list is sorted on absolute values but if you see closely all positive numbers are sorted in ascending order but negative numbers in descending order, we can take advantage of this fact.
-What we'll do is, we will traverse the LL and whenever we find a negative number we will remove it from that position and insert it at the beginning of LL.
+What we'll do is, we will traverse the LL and whenever we find a negative number or any number which is out of order, we will remove it from that position and insert it at the beginning of LL.
+
+#### Pseudo Code
+
+> sortList(Node** head)
+> 1. Define two variables prev and curr
+>     - set prev to head pointer and curr next to head pointer
+> 2. Traverse the list to the end
+>     - If( curr < prev ) then remove curr from linked list and insert it at beginning
+
+#### C++ Function Implementation
+```cpp
+void sortList(Node** head)
+{
+    Node* prev = (*head); 
+    Node* curr = (*head)->next; 
+  
+    while (curr != NULL) {
+    
+        if (curr->data < prev->data) { 
+            prev->next = curr->next; 
+   
+            curr->next = (*head); 
+            (*head) = curr; 
+   
+            curr = prev; 
+        } 
+        else{
+            prev = curr; 
+        }
+        
+        curr = curr->next; 
+    }
+}
+```
