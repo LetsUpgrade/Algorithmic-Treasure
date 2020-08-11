@@ -61,9 +61,8 @@ Node* addOne(Node *head)
     } 
 
     if (carry > 0) {
-    	Node *ctemp = new Node(carry);
-		  temp->next = ctemp ;
-	  }
+    	temp->next = new Node(carry);
+    }
     
     head = res; 
 
