@@ -60,12 +60,34 @@ Node* addOne(Node *head)
     } 
 
     if (carry > 0) {
-    	Node *ctemp = new Node(carry);
-		temp->next = ctemp ;
-	}
+    	temp->next = new Node(carry);
+    }
     
     head = res; 
 
     return reverse(head); 
 } 
+```
+
+### Optimized Approach
+This approach focuses on if any of the digits of number is `9` because it is digit 9 which generates a two digit sum i.e., 10 whose carry needs to be passed on to other node and  also it creates all changes, but in case of other numerals ( i.e., 0 to 8 ) we just have to increment it by 1.
+
+We've to find the last node which is not equal to 9, in our discovery there can be three cases:
+- There is no node which is not equal to nine i.e., all nodes are 9, in this case we'll have to increase the size of LL by inserting a node at HEAD containing `1` as its data and all other nodes will be converted to 0.
+```
+HEAD -> [9] -> [9] -> [9] -> [9] -> NULL
+Insert 1
+HEAD -> [1] -> [9] -> [9] -> [9] -> [9] -> NULL
+change other to 0
+HEAD -> [1] -> [0] -> [0] -> [0] -> [0] -> NULL
+```
+- If we find last node of LL to be not equal to 9 then just add 1 to it and return
+```
+HEAD -> [1] -> [2] -> [9] -> [7] -> NULL
+Add 1 to last node
+HEAD -> [1] -> [2] -> [9] -> [8] -> NULL
+```
+- If the node we find is not last node but is in-between in LL it means all nodes after it are 9, then add 1 to it and change data of all nodes after it to 0.
+```
+
 ```
