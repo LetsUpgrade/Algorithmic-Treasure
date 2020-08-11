@@ -37,6 +37,16 @@ You need to sort the linked list and return the new linked list.
 
     0 -> 0 -> 0 -> 1 -> 1
 
+> > Explanation 1:
+
+    The sorted linked list looks like:
+    0 -> 0 -> 1 -> 1
+
+> > Explanation 2:
+
+    The sorted linked list looks like:
+    0 -> 0 -> 0 -> 1 -> 1
+
 ## Approach
 
 Following steps can be used to sort the given linked list:
