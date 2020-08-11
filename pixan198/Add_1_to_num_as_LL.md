@@ -26,12 +26,12 @@ Before returning the head reverse the LL.
 
 
 #### Pseudo Code
-1. Reverse the given linked list
+> 1. Reverse the given linked list
       - For example, [2]-> [9]-> [9] -> [9] is converted to [9] -> [9] -> [9] -> [2]
-2. Traverse the LL from leftmost node and add 1 to it:
+> 2. Traverse the LL from leftmost node and add 1 to it:
       - If there is a carry
           - move to the next node, Keep moving to the next node while there is a carry
-3. Reverse the modified LL and return head
+> 3. Reverse the modified LL and return head
 
 #### C++ Function Implementation
 ```cpp
@@ -76,6 +76,8 @@ We've to find the last node which is not equal to 9, in our discovery there can 
 - There is no node which is not equal to nine i.e., all nodes are 9, in this case we'll have to increase the size of LL by inserting a node at HEAD containing `1` as its data and all other nodes will be converted to 0.
 ```
 HEAD -> [9] -> [9] -> [9] -> [9] -> NULL
+                                     ^
+                                     |
 Insert 1
 HEAD -> [1] -> [9] -> [9] -> [9] -> [9] -> NULL
 change other to 0
@@ -84,10 +86,71 @@ HEAD -> [1] -> [0] -> [0] -> [0] -> [0] -> NULL
 - If we find last node of LL to be not equal to 9 then just add 1 to it and return
 ```
 HEAD -> [1] -> [2] -> [9] -> [7] -> NULL
+                              ^
+                              |
 Add 1 to last node
 HEAD -> [1] -> [2] -> [9] -> [8] -> NULL
 ```
 - If the node we find is not last node but is in-between in LL it means all nodes after it are 9, then add 1 to it and change data of all nodes after it to 0.
 ```
+HEAD -> [1] -> [2] -> [9] -> [9] -> NULL
+                ^
+                |
+Add 1
+HEAD -> [1] -> [3] -> [9] -> [9] -> NULL
+Change all node after it to 0
+HEAD -> [1] -> [3] -> [0] -> [0] -> NULL
+```
 
+#### Pseudo Code
+> 1. Create two pointer variables of type Node, last and curr
+```
+Initialize both
+last = NULL
+curr = HEAD
+```
+> 2. Traverse the LL to the end
+>     - If ( curr->data is not equal to 9) then set last = curr
+> 3. If ( curr->data is not equal to 9 ) then add 1 to curr->data and return HEAD
+> 4. If ( last is equal to NULL ) then create a new Node and insert it at HEAD of LL
+> 5. Set the data of 1st node to `1` and change data of all nodes to 0
+> 6. return HEAD
+
+#### C++ Function Implementation
+```cpp
+Node* addOneOptimized(Node* head)
+{
+    Node* last = NULL;
+    Node* cur = head;
+
+    while (cur->next != NULL) {
+
+        if (cur->data != 9) {
+            last = cur;
+        }
+        cur = cur->next;
+    }
+
+    if (cur->data != 9) {
+        cur->data++;
+        return head;
+    }
+
+    if (last == NULL) {
+        last = new Node(0);
+        last->data = 0;
+        last->next = head;
+        head = last;
+    }
+
+    last->data++;
+    last = last->next;
+
+    while (last != NULL) {
+        last->data = 0;
+        last = last->next;
+    }
+
+    return head;
+}
 ```
