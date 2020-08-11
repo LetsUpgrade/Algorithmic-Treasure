@@ -27,10 +27,10 @@ Before returning the head reverse the LL.
 
 #### Pseudo Code
 > 1. Reverse the given linked list
-      - For example, [2]-> [9]-> [9] -> [9] is converted to [9] -> [9] -> [9] -> [2]
+>      - For example, [2]-> [9]-> [9] -> [9] is converted to [9] -> [9] -> [9] -> [2]
 > 2. Traverse the LL from leftmost node and add 1 to it:
-      - If there is a carry
-          - move to the next node, Keep moving to the next node while there is a carry
+>      - If there is a carry
+>          - move to the next node, Keep moving to the next node while there is a carry
 > 3. Reverse the modified LL and return head
 
 #### C++ Function Implementation
