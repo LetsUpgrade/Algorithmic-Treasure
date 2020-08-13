@@ -1,28 +1,3 @@
-# DOCUMENTATION
-## Swap List Nodes In Pairs<br>
-<a><img src= "https://img.shields.io/badge/-Microsoft-orange" height="25">&nbsp;&nbsp;<img src="https://img.shields.io/badge/-Amazon-blue" height="25">&nbsp;&nbsp;<img src= "https://img.shields.io/badge/-Interview Bit-navy" height="25">
-&nbsp;&nbsp;<img src= "https://img.shields.io/badge/-Python-red" height="25"></a>
-
- **Problem Statement**<br>
-Given a linked list, swap every two adjacent nodes and return its head.
-
-For example,
-Given 1->2->3->4, you should return the list as 2->1->4->3.
-```
-Example 1
- 
-1 2 3 4
-```
-> > 2 1 4 3
-```
-Example 2
-
-2 4 6 3 1 5
-```
-> > 4 2 3 6 5 1<br>
-#### Solution<br>
-Time complexity for this problem is O(n).
-```
 # A linked list node
 class Node:
     def __init__(self, data=None, next=None):
@@ -78,4 +53,3 @@ if __name__ == '__main__':
     head = rearrange(head)
     printList(head)
  
-```

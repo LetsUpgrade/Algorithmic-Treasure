@@ -1,25 +1,3 @@
-# DOCUMENTATION
-## Even Reverse<br>
-<a><img src="https://img.shields.io/badge/-Amazon-blue" height="25">&nbsp;&nbsp;<img src= "https://img.shields.io/badge/-Interview Bit-navy" height="25">
-&nbsp;&nbsp;<img src= "https://img.shields.io/badge/-Python-red" height="25"></a><br>
-**Problem Statement**<br>
-Given a linked list A , reverse the order of all nodes at even positions.<br>
-Return the head of the new linked list.
-
-```
-Example 1
-
-1 3 5 7 9 2 4 6 8 0
-```
-> > 1 0 5 6 9 2 4 7 8 3
-```
-Example 2
-
-1 2 7 6
-```
-> > 1 6 7 2
-#### Solution<br>
-```
 # Creating A Node
 class Node:  
     def __init__(self, next = None, data = None):  
@@ -126,4 +104,3 @@ head = solve(head)
   
 # Printing the even reversed linked list 
 printLinkedList(head) 
-```
