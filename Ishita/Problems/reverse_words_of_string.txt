@@ -1,0 +1,32 @@
+DOCUMENTATION
+Problem link:https://practice.geeksforgeeks.org/problems/reverse-each-word-in-a-given-string/0
+Asked in:Adobe, Amazon, Flipkart, Microsoft
+Problem:Given a String of length N reverse each word in it. Words are separated by dots.
+Input:
+The first line contains T denoting the number of testcases. Then follows description of testcases. Each case contains a string containing dots and characters.
+ Output:
+For each test case, output a String in single line containing the reversed words of the given String.
+Constraints:
+1<=T<=10
+1<=Length of String<=2000
+Example:
+Input:
+2
+i.like.this.program.very.much
+pqr.mno
+Output:
+i.ekil.siht.margorp.yrev.hcum
+rqp.onm
+Time and Space Complexity:
+time: O(n)
+space:O(n)
+where n is size of string
+Approach: Split the array into words using "."and store all the words into an array.Reverse each word and store it in a string and at last print the string with reversed words.
+Pseudocode:String[] words = str.split("\\.")//using split func
+            for (String word : words) 
+            {
+                for (int j = word.length() - 1; j >= 0; j--) 
+                    revword = revword + word.charAt(j)
+                revstring =revstring+revword+"."
+            }
+            Print(revstring.substring(0,str.length()))
