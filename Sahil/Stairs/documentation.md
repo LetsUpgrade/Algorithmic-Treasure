@@ -7,7 +7,7 @@ Asked in:
 <img src= "https://img.shields.io/badge/-Intel-blue" height="25">&nbsp;&nbsp;
 <img src= "https://img.shields.io/badge/-Morgan Stanley-gray" height="25">&nbsp;&nbsp;
 <img src= "https://img.shields.io/badge/-Interviewbit-skyblue">&nbsp;&nbsp;
-<img src= "https://img.shields.io/badge/-CPP-brown">&nbsp;&nbsp;
+<img src= "https://img.shields.io/badge/-Python-brown">&nbsp;&nbsp;
 
 
 ### Problem Statement 
