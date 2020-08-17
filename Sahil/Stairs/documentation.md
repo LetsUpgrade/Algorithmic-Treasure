@@ -53,4 +53,4 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
            
  >>Time complexity : **O(n)**
 
-***[For Reference](https://www.interviewbit.com/problems/identical-binary-trees/)***
+***[For Reference](https://www.interviewbit.com/problems/stairs/)***
