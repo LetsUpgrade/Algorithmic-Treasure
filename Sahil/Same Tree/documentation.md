@@ -5,7 +5,7 @@
 Asked in: 
 <img src= "https://img.shields.io/badge/-Amazon-orange" height="25">&nbsp;&nbsp;
 <img src= "https://img.shields.io/badge/-Interviewbit-skyblue">&nbsp;&nbsp;
-<img src= "https://img.shields.io/badge/-CPP-brown">&nbsp;&nbsp;
+<img src= "https://img.shields.io/badge/-Python-brown">&nbsp;&nbsp;
 
 
 ### Problem Statement 
