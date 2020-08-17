@@ -1,0 +1,27 @@
+public class Sample 
+{
+
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int t;
+        t = sc.nextInt();
+        while (t-- > 0)
+        {
+
+            String str = sc.nextLine();
+            String[] words = str.split("\\.");
+            String revstring = "";
+            for (String word : words) 
+            {
+                String revword = "";
+                for (int j = word.length() - 1; j >= 0; j--) 
+                {
+                    revword = revword + word.charAt(j);
+                }
+                revstring =revstring+revword+".";
+            }
+            System.out.print(revstring.substring(0,str.length()));
+        }
+    }
+}
