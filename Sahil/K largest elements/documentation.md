@@ -22,9 +22,9 @@ Given an 1D integer array A of size N you have to find and return the B largest 
 
 **Problem Constraints :**
 
-        1 <= N <= 105
+        1 <= N <= 10^5
         1 <= B <= N
-        1 <= A[i] <= 103
+        1 <= A[i] <= 10^3
 
 **Example 1 :**
 
@@ -57,4 +57,4 @@ Given an 1D integer array A of size N you have to find and return the B largest 
            
  >>Time complexity : **O(n)**
 
-***[For Reference](https://www.interviewbit.com/problems/identical-binary-trees/)***
+***[For Reference](https://www.interviewbit.com/problems/k-largest-elements/)***
