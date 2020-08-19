@@ -1,7 +1,7 @@
 def remove_duplicate(n,arr):
 
 # the length of array should be gretaer than 1
-#else return n 
+# else return n 
     if n <= 1: 
         return n 
 #temporary variable to store unique elements of the array  
