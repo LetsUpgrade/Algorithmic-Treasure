@@ -1,4 +1,4 @@
-#check if the list contains 1 or more nodes
+# check if the list contains 1 or more nodes
 def getLink(head):
     temp = head
     while temp is not None and temp.next is not None:
