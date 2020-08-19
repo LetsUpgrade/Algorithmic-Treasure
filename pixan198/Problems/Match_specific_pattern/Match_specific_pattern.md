@@ -30,9 +30,11 @@ abb xyy
 ### Approach
 
 We will use hash map to map every character of pattern to its corresponding character in string.
-If the current character is not been mapped, then map it to its corresponding character in given string
-If the current character has been mapped before then check if the corresponding character is same with current corresponding value or not
-If there are no contradictions then add this word to the match string array
+- If the current character is not been mapped, then map it to its corresponding character in given string
+- If the current character has been mapped before then check if the corresponding character is same with current corresponding value or not
+- If there are no contradictions then add this word to the match string array
+
+<img src="https://pixan198.github.io/images/match_word.svg" alt="example" />
 
 #### Pseudo Code
 
