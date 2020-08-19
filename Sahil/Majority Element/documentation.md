@@ -23,17 +23,17 @@ You may assume that the array is non-empty and the majority element always exist
         Input : [2, 1, 2]
         
         Return  : 2 which occurs 2 times which is greater than 3/2.
-
-
         
- ### Solution:
+ ### Solution :
+ **Sorting :** 
+ If the elements are sorted in monotonically increasing (or decreasing) order, the majority element can be found at index `[n/2]` & `([n/2]+1)` incidentally, if *n* is even.
 
-****
 
+        Sort the array
+        return the element at n/2 position
 
-****
  
            
- >>Time complexity : **O(n)**
+ >>Time complexity : **O(nlogn)**
 
 ***[For Reference](https://www.interviewbit.com/problems/majority-element/)***
