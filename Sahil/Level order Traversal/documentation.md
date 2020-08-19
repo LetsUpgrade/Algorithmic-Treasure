@@ -35,7 +35,18 @@ Given a binary tree, return the level order traversal of its nodes’ values. (i
        
  ### Solution:
 
-****
+**Using Queue**
+
+        printLevelorder(tree)
+        1. create an empty queue q and append root to queue
+        2. while there are nodes in the queue, 
+            pop queue(0), add queue(0).val to current ans list 
+            and append queue(0)'s children to queue
+            append ans to final_list and reset ans = []
+          end of loop
+         3.return final_list
+         
+        
 
 
 ****
