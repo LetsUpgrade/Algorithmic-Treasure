@@ -15,7 +15,7 @@ def deleteMid(head):
         i = i.next;
         
     
-    # since i pointer was moving at half speed of j pointer , it points at
+    #  since i pointer was moving at half speed of j pointer , it points at
     # mid node when j pointer reaches the end
     prev.next = i.next; # bypassing mid node
     
