@@ -45,8 +45,16 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
         
  ### Solution:
 
-****
-
+**DP Fibonacci**
+   
+   
+   To each a specific stair **x**, we can either climb **1** stair from `x-1`, or **2** stairs from `x-2`. 
+          Therefore, suppose `dp[i]` records the number of ways to reach stair **i**, it's a *Fibonacci Array*.
+                    
+                    dp[i] = dp[i-1]+dp[i-2] 
+          
+   The base case is to reach the first stair, we only have one way to do it so ``dp[1] = 1.``
+   Besides, since only dp elements we used is most recent two elements, we can use two pointer to save using of dp array. 
 
 ****
  
