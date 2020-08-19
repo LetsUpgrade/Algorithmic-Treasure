@@ -31,7 +31,30 @@ Return ```0 / 1``` ( 0 for false, 1 for true ) for this problem
         
  ### Solution:
 
-****
+**Recursion Approach**
+
+  Check if p and q nodes are not None, and their values are equal. If all checks are OK, do the same for the child nodes recursively.
+      
+        1. If both trees are empty then return 1.
+        2. Else If both trees are non -empty
+                Check data of the root nodes (tree1->data == tree2->data)
+                Check left subtrees recursively i.e., call sameTree(tree1->left_subtree, tree2->left_subtree)
+                Check right subtrees recursively i.e., call sameTree(tree1->right_subtree, tree2->right_subtree)
+                If the values returned in the above three steps are true then return 1.
+        3. Else return 0 (one is empty and other is not).
+        
+  
+  
+**Iteration Approaach**
+
+Start from the root and then at each iteration pop the current node out of the deque. Then do the same checks as in the recursive approach:
+
+        if p and q are not None,
+
+        p.val == q.val,
+
+        and if checks are OK, push the child nodes.
+
 
 
 ****
