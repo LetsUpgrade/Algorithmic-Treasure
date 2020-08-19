@@ -2,6 +2,8 @@
 
 ## Convert Ternary Expression to Binary Tree
 
+<img src="https://img.shields.io/badge/Asked in-Facebook, Nutanix-blue" alt="Companies" />
+
 ### Problem Statement
 
 > Given a string that contains ternary expressions. The expressions may be nested. You need to convert the given ternary expression to a binary Tree and return the root.
@@ -31,8 +33,8 @@ Output:
 a b c
 a b c d e
 ```
-<div style="display:flex;flex-direction:row;justify-content:centre;">
-<img style="display:inline;" src="https://pixan198.github.io/images/treeabc.svg" alt="abc tree image"/><img style="display:inline;" src="https://pixan198.github.io/images/treeabcde.svg" alt="abcde tree image"/>
+<div >
+<img style="display:inline;" src="https://pixan198.github.io/images/treeabc.svg" alt="abc tree image"/>&nbsp;&nbsp;&nbsp;&nbsp;<img style="display:inline;" src="https://pixan198.github.io/images/treeabcde.svg" alt="abcde tree image"/>
 </div>
 
 
