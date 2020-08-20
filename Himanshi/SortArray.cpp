@@ -1,6 +1,9 @@
 //Question Link
 //https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s/0
 
+#include<iostream>
+using namespace std;
+
 int main()
 {
 	int t;
