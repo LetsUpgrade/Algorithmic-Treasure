@@ -49,12 +49,15 @@ Given an 1D integer array A of size N you have to find and return the B largest 
         
  ### Solution:
 
-****
+**Use Sorting**
+
+        1) Sort the elements in descending order in O(nLogn)
+        2) Print the first k numbers of the sorted array O(k).
 
 
 ****
  
            
- >>Time complexity : **O(n)**
+ >>Time complexity : **O(nlogn)**
 
 ***[For Reference](https://www.interviewbit.com/problems/k-largest-elements/)***
