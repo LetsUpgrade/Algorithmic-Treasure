@@ -16,21 +16,21 @@ int transitionPoint(int arr[], int n) {
 // ------------- Optimised Approach-------------------
 int transitionPoint(int arr[], int n) 
 { 
-    int lb = 0, ub = n-1; 
+    int l = 0, u = n-1; 
   
-    while (lb <= ub) 
+    while (l <= u) 
     { 
-        int mid = (lb+ub)/2; 
+        int mid = (l + u)/2; 
   
         if (arr[mid] == 0) 
-            lb = mid+1; 
+            l = mid+1; 
   
         else if (arr[mid] == 1) 
         { 
             if (arr[mid-1]==0) 
                 return mid; 
   
-            ub = mid-1; 
+            u = mid-1; 
         } 
     } 
     return -1; 
