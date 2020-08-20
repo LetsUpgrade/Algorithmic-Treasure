@@ -21,44 +21,44 @@ Given a directed graph. The task is to do Breadth First Search of this graph.
             0 1 2  
     
 #### Solution
-  Step 1)
+  Step 1)<br>
          ![Image 1](bfs1.jpg)
 
 
   Each vertex or node in the graph is known. For instance, you can mark the node as V.
 
-  Step 2)
+  Step 2)<br>
          ![Image 2](bfs2.jpg)
 
 
 
   In case the vertex V is not accessed then add the vertex V into the BFS Queue
 
-  Step 3)
+  Step 3)<br>
          ![Image 3](bfs3.jpg)
 
 
   Start the BFS search, and after completion, Mark vertex V as visited.
 
-  Step 4)
+  Step 4)<br>
          ![Image 4](bfs4.jpg)
 
 
   The BFS queue is still not empty, hence remove the vertex V of the graph from the queue.
 
-  Step 5)
+  Step 5)<br>
          ![Image 5](bfs5.jpg)
 
 
   Retrieve all the remaining vertices on the graph that are adjacent to the vertex V
 
-  Step 6)
+  Step 6)<br>
           ![Image 6](bfs6.jpg)
 
 
   For each adjacent vertex let's say V1, in case it is not visited yet then add V1 to the BFS queue
 
-  Step 7)
+  Step 7)<br>
          ![Image 7](bfs7.jpg)
 
 
