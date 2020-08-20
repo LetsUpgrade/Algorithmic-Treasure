@@ -1,6 +1,10 @@
 //Question Link
 //https://practice.geeksforgeeks.org/problems/roman-number-to-integer/0
 
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
 int value(char c)
 {
     if(c == 'I')
@@ -43,3 +47,20 @@ int getRoman(string s)
         }
     }
 }
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        string s;
+        cin >> s;
+        cout << getRoman(s) << endl;
+    }
+    return 0;
+}    
+        
+        
+     
+    
