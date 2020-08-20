@@ -2,6 +2,7 @@
 
 ## Match Specfic Pattern
 
+<img src="https://img.shields.io/badge/Asked in-Amazon, Microsoft, MakeMyTrip-blue" alt="Companies" />
 
 ### Problem Statement
 
