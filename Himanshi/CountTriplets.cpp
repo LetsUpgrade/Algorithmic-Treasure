@@ -1,6 +1,10 @@
 //Question Link
 //https://practice.geeksforgeeks.org/problems/count-the-triplets/0
 
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
 int main() {
 	int t;
 	cin >> t;
