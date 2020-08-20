@@ -4,7 +4,7 @@ def first_repeating(n,arr):
     #create a empty dictionary
     newSet = dict()
 
-    #tranversing the array elments from end
+    # tranversing the array elments from end
     for x in range(n - 1, -1, -1):
         
         #check if the element is already present in the dictionary
