@@ -134,8 +134,8 @@
  
  <p><b> Solution: <i>Question 5 </i> : Anagram    </b> </p>
  <p> <b>1.  Optimized Approach:-</b> <br>
-         (i) check the length of the both string  <br>
-         (ii) check each alphabet of the both  <br>
+         (i) check the length of the both strings  <br>
+         (ii) check each alphabet of the both strings <br>
   </p>
   <p><b> 2. Time and Space complexity :-</b><br>
          Time Complexity :- O(n)<br>
