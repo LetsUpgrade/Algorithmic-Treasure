@@ -4,11 +4,10 @@
   <div>
         <p> <b>**Algorithmic Treasure ** </b></p>
         <p><b>**Project ID: 19**</b></p>
-   </div>
-    <div>
+    </div>
 
 <p> <b> All the algorithms are coded in Python Language</b></p>
-<p><b> Solution: <i>Question 1 </i> :Union of two arrays </b> </p>
+<p><b> Solution: Question 1 :Union of two arrays </b> </p>
  <p> <b>1.  Optimized Approach:-</b> <br>
          (i) Accept elements in  both the array(s) and store their lenght in two separate variable.<br>
          (ii) Merge the two array using "+" operator and store it in a variable .<br>
@@ -63,37 +62,38 @@
  <p> <b>1.  Optimized Approach:-</b> <br>
          (i) create two stack ( s1 , s2 ) and a temporary variable (temp)<br>
          (ii) the original stack (s1) should be greater than 0 <br>
-         (iii) assign temp to  the top element of the original stack ., then push  temp value  into the another stack s2.
-         (iv) Now, again assign temp to the next top element of the original stack 
-         (v) check if the temp value if greater than the s2 
-              &npbs then  push the temp value to original stack s1
-              else push the temp value to s2
-         (vi) return s2
+         (iii) assign temp to  the top element of the original stack , then push  temp value  into the another stack s2.<br>
+         (iv) Now, again assign temp to the next top element of the original stack <br>
+         (v) check if the temp value if greater than the s2 <br>
+              &npbs then  push the temp value to original stack s1 <br>
+              else push the temp value to s2 <br>
+         (vi) return s2 <br>
   
   </p>
  <p> <b>  2. Time and Space complexity :-</b> <br>
-         Time Complexity :- O(n)<br>
+         Time Complexity :- O(n*n)<br>
          Space Complexity:- O(1)
  </p>
  <p> <b>3. Pseudocode </b> <br>
-         def sort (arr , n ): <br>
-             c0,c1,c2 =0,0,0 <br>
-             for i 0 .... n: <br>
-                 count the number of 0 ;c0<br>
-                  count the number of 1 ;c1<br>
-                  count the number of 2 ;c2 <br>
-              update the value of i ; i=0  <br>
-                  store  all the  0s at the beginning <br>
-                  then store all the 1s <br>
-                  finally store all the 2s <br>
-               display the sorted array
+         Create a original stack(s1) , temporary stack s2, temporary variable (temp). <br>
+         While s1 is NOT empty :  <br>
+               Assign temp to the top element of s1  <br>
+         while s2 is NOT empty and top(s1) is greater than temp:  <br>
+                Assign s1 to the value of s2  <br>
+                push the value of temp in s2  <br>
+        display s2   <br>
               
      
           >>  OUTPUT
-          Input: n=9 arr1 = [2,1,1,0,0,2,1,0,2] 
-          Output: [0,0,0,1,1,1,2,2,2]
+                Input:  10 2 45 3 7
+                Output: 45 10 7 3 2 
+  
+  
+  
+  
   </p>
-  <p><b> Solution: <i>Question 4 </i> : Stack using 2 queue   </b> </p>
+  
+ <p><b> Solution: <i>Question 4 </i> : Stack using 2 queue   </b> </p>
  <p> <b>1.  Optimized Approach:-</b> <br>
          (i)Count the number of 0s , 1s , 2s in the array .<br>
          (ii) Store all the 0s from the beginning , next store all 1s and then store all the 2s at the end.<br>
@@ -119,35 +119,36 @@
           >>  OUTPUT
           Input: n=9 arr1 = [2,1,1,0,0,2,1,0,2] 
           Output: [0,0,0,1,1,1,2,2,2]
-          </p>
+ </p>
           
-           <p><b> Solution: <i>Question 5 </i> : Anagram    </b> </p>
+ 
+ 
+ 
+ 
+ <p><b> Solution: <i>Question 5 </i> : Anagram    </b> </p>
  <p> <b>1.  Optimized Approach:-</b> <br>
-         (i)Count the number of 0s , 1s , 2s in the array .<br>
-         (ii) Store all the 0s from the beginning , next store all 1s and then store all the 2s at the end.<br>
+         (i) check the length of the both string  <br>
+         (ii) check each alphabet of the both  <b> <br>
   </p>
- <p> 2. Time and Space complexity :-<br>
+  <p><b> 2. Time and Space complexity :-</b><br>
          Time Complexity :- O(n)<br>
-         Space Complexity:- O(1)
+         Space Complexity:- O(Number of distinct characters)
  </p>
- <p> 3. Pseudocode <br>
-         def sort (arr , n ): <br>
-             c0,c1,c2 =0,0,0 <br>
-             for i 0 .... n: <br>
-                 count the number of 0 ;c0<br>
-                  count the number of 1 ;c1<br>
-                  count the number of 2 ;c2 <br>
-              update the value of i ; i=0  <br>
-                  store  all the  0s at the beginning <br>
-                  then store all the 1s <br>
-                  finally store all the 2s <br>
-               display the sorted array
+<p> <b> 3. Pseudocode  </b> <br>
+        Accept two strings (a,b) <br>
+        check if the lenght (a) != (b) <br>
+                 then return False  <br>
+           else : sort the array a and store it in a; sort array b and store it in a  <br>
+       for i=0 ....len(a) <br>
+           if(a[i] == b[i]) <br>
+              return True  <br>
+               else: return False  <br>
               
      
           >>  OUTPUT
-          Input: n=9 arr1 = [2,1,1,0,0,2,1,0,2] 
-          Output: [0,0,0,1,1,1,2,2,2]
-          </p>
+          Input: a = "restful" b = " fluster " 
+          Output: True
+  </p>
           
   
   </body>
