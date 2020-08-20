@@ -78,3 +78,53 @@ int transitionPoint(int arr[], int n) {
     return -1; 
 }
 ```
+----
+
+### Time Optimised Approach
+
+We will use binary search on sorted array to find smallest index of 1 in array.
+
+#### Pseudo Code
+```
+For Binary Search create two integer variables 'l' and 'u'
+initialize l = 0 and u = n - 1
+
+Search while l <= u:
+	Create a mid Integer variable and initialize mid = (l + u)/2
+	Check if the element at mid index is 1
+		IF Yes:
+			Check if it is smallest index of 1
+				IF Yes:
+					Return Index
+				IF No:
+					Update u = mid - 1
+		IF No:
+			Update l = mid + 1
+	Return -1
+```
+
+#### C++ Function Implementation
+
+```cpp
+int transitionPoint(int arr[], int n) 
+{ 
+    int l = 0, u = n-1; 
+  
+    while (l <= u) 
+    { 
+        int mid = (l + u)/2; 
+  
+        if (arr[mid] == 0) 
+            l = mid+1; 
+  
+        else if (arr[mid] == 1) 
+        { 
+            if (arr[mid-1]==0) 
+                return mid; 
+  
+            u = mid-1; 
+        } 
+    } 
+    return -1; 
+}
+```
