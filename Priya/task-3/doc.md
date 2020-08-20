@@ -95,30 +95,37 @@
   
  <p><b> Solution: <i>Question 4 </i> : Stack using 2 queue   </b> </p>
  <p> <b>1.  Optimized Approach:-</b> <br>
-         (i)Count the number of 0s , 1s , 2s in the array .<br>
-         (ii) Store all the 0s from the beginning , next store all 1s and then store all the 2s at the end.<br>
+         (i) create two queue (q1 , q2) <br>
+         (ii) enqueue the elements to the front of q1.<br>
+         (iii) pop operation to dequeue from q1  <br>
+         (iv) q2 is used to enqueue at the front of ‘q1’. <br>
+          (v) return the popped element  <br>
+  
+
   </p>
- <p> 2. Time and Space complexity :-<br>
-         Time Complexity :- O(n)<br>
-         Space Complexity:- O(1)
+ <p><b> 2. Time and Space complexity :-</b><br>
+         Time Complexity :- Push() - O(1) ; POP() -  O(N) <br>
+         Space Complexity:- PUSH() -O(1) ; POP() - O(1)
  </p>
- <p> 3. Pseudocode <br>
-         def sort (arr , n ): <br>
-             c0,c1,c2 =0,0,0 <br>
-             for i 0 .... n: <br>
-                 count the number of 0 ;c0<br>
-                  count the number of 1 ;c1<br>
-                  count the number of 2 ;c2 <br>
-              update the value of i ; i=0  <br>
-                  store  all the  0s at the beginning <br>
-                  then store all the 1s <br>
-                  finally store all the 2s <br>
-               display the sorted array
+ <p> <b>3. Pseudocode </b><br>
+         Create two queue (q1, q2) <br>
+         push(x): [x is the element to be pushed in the stack] <br>
+         Enqueue x to q2 <br>
+         One by one dequeue everything from q1 and enqueue to q2. <br>
+         Swap the names of q1 and q2 <br>
+         pop(s): <br>
+        Dequeue an item from q1 and  <br>
+         return the popped element <br>
               
      
           >>  OUTPUT
-          Input: n=9 arr1 = [2,1,1,0,0,2,1,0,2] 
-          Output: [0,0,0,1,1,1,2,2,2]
+          Input: 
+                 push(20)
+                 push(4)
+                 pop()
+                 push(7)
+                 pop()
+          Output: 4 7
  </p>
           
  
@@ -128,7 +135,7 @@
  <p><b> Solution: <i>Question 5 </i> : Anagram    </b> </p>
  <p> <b>1.  Optimized Approach:-</b> <br>
          (i) check the length of the both string  <br>
-         (ii) check each alphabet of the both  <b> <br>
+         (ii) check each alphabet of the both  <br>
   </p>
   <p><b> 2. Time and Space complexity :-</b><br>
          Time Complexity :- O(n)<br>
