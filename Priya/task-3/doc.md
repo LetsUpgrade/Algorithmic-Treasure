@@ -16,11 +16,11 @@
          (iv) store the sorted merged array in set [Since set does not contain duplicate elements ]  <br>
          (v)  return the final array.
   </p>
- <p> 2. Time and Space complexity :-<br>
+ <p> <b>  2. Time and Space complexity :-</b><br>
          Time Complexity :- O(m+n)<br>
          Space Complexity:- O(m+n)
  </p>
- <p> 3. Pseudocode <br>
+ <p> <b>3. Pseudocode </b> <br>
          def function(arr1, arr2 , M ,N):<br>
             result = arr1 + arr2 <br>
            return sorted(set(result))  <br>     
@@ -36,11 +36,11 @@
          (i)Count the number of 0s , 1s , 2s in the array .<br>
          (ii) Store all the 0s from the beginning , next store all 1s and then store all the 2s at the end.<br>
   </p>
- <p> 2. Time and Space complexity :-<br>
+ <p> <b> 2. Time and Space complexity :- </b><br>
          Time Complexity :- O(n)<br>
          Space Complexity:- O(1)
  </p>
- <p> 3. Pseudocode <br>
+ <p> <b>3. Pseudocode </b><br>
          def sort (arr , n ): <br>
              c0,c1,c2 =0,0,0 <br>
              for i 0 .... n: <br>
@@ -61,14 +61,21 @@
   
 <p><b> Solution: <i>Question 3 </i> : Sort a Stack   </b> </p>
  <p> <b>1.  Optimized Approach:-</b> <br>
-         (i)Count the number of 0s , 1s , 2s in the array .<br>
-         (ii) Store all the 0s from the beginning , next store all 1s and then store all the 2s at the end.<br>
+         (i) create two stack ( s1 , s2 ) and a temporary variable (temp)<br>
+         (ii) the original stack (s1) should be greater than 0 <br>
+         (iii) assign temp to  the top element of the original stack ., then push  temp value  into the another stack s2.
+         (iv) Now, again assign temp to the next top element of the original stack 
+         (v) check if the temp value if greater than the s2 
+              &npbs then  push the temp value to original stack s1
+              else push the temp value to s2
+         (vi) return s2
+  
   </p>
- <p> 2. Time and Space complexity :-<br>
+ <p> <b>  2. Time and Space complexity :-</b> <br>
          Time Complexity :- O(n)<br>
          Space Complexity:- O(1)
  </p>
- <p> 3. Pseudocode <br>
+ <p> <b>3. Pseudocode </b> <br>
          def sort (arr , n ): <br>
              c0,c1,c2 =0,0,0 <br>
              for i 0 .... n: <br>
