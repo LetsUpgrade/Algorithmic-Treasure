@@ -1,9 +1,12 @@
 //Question Link
 //https://practice.geeksforgeeks.org/problems/anagram/0
 
+#include<iostream>
+using namespace std;
+
 int main()
 {
-	int t;
+    int t;
     cin>>t;
     
     while(t--)
