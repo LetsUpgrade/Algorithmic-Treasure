@@ -87,3 +87,58 @@ int getId(int M[MAX][MAX], int n)
     return -1;
 }
 ```
+
+### Time Optimised Approach
+
+It is a two pointer approach one will start from beginning and other will start from end.
+Let beginning pointer be `a` and end pointer be `b`.
+we will check if `a` knows `b`, if yes then `a` must not be celebrity else `b` must not be celebrity
+At the end of traversal assign `a` as celebrity index.
+Again check again if this person is celebrity or not if yes then return `a` else return `-1`
+We will check this by counting number of people this person knows and number of people who know this person.
+
+<img src="https://pixan198.github.io/images/opt_celebrity_problem.svg" alt="example" />
+
+#### Pseudo Code
+```
+Create two variable for a and b and initialize them as a = 0 and b = n - 1
+Run a loop while a < b:
+    If a knows b:
+        increment a
+    Else:
+        decrement b
+set a as celebrity
+Run a loop from 0 to n-1 and count no. of people this person knows and no. of people who know this person
+    IF No. of people this person knows is 0 and No. of people who know this person is n-1:
+        return a
+    Else:
+        return -1
+```
+
+#### C++ Function Implementation
+```cpp
+int getId(int M[MAX][MAX], int n)
+{
+    int a = 0; 
+    int b = n - 1; 
+  
+    while (a < b) 
+    { 
+        if (M[a][b]){
+            a++; 
+        }
+        else{
+            b--;
+		} 
+    } 
+  
+    for (int i = 0; i < n; i++) {
+	 
+        if ( (i != a) && (M[a][i] || !M[i][a]) ){
+            return -1; 
+        }
+    } 
+
+    return a; 
+}
+```
