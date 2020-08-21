@@ -35,6 +35,8 @@ mno.pqr
 
 We will first reverse all individual words in string and when all words are reversed we will reverse whole string at once so that we get required output.
 
+<img src="https://pixan198.github.io/images/reverse_word.svg" alt="example" />
+
 #### Pseudo Code
 ```
 Create two variables start and end and initialize start = 0 and end = 0
