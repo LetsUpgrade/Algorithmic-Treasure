@@ -40,3 +40,11 @@ Output:
 
 ### Naive Approach
 
+We will count two things about any person, first how many people (s)he knows in the party and second how many people know that person. We will store these values for every person and according to the problem, celebrity does not know anybody at the party but everybody knows h(im/er). So, we need to find a specific pair of values in the data we stored earlier, celebrity does not know anybody means it will have `0` for how many people he/she know value and everybody knows celebrity so it will have `n-1` for how many people know that person value, everybody knows except itself so, no. of people - 1(n-1).
+
+<img src="https://pixan198.github.io/images/celebrity_problem.svg" alt="example" />
+
+#### Pseudo Code
+```
+
+```
