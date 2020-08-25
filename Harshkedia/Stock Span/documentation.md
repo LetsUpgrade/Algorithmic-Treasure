@@ -1,6 +1,6 @@
 # Documentation
 
-## **Detect Loop in linked list**
+## **Stock Span**
 
 Asked in:  <a><img src= "https://img.shields.io/badge/-DEShaw-red" height="25">&nbsp;&nbsp;
 <img src= "https://img.shields.io/badge/-Amazon-yellow" height="25">&nbsp;&nbsp;
