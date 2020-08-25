@@ -1,6 +1,6 @@
 # Documentation
 
-## **Detect Loop in linked list**
+## **ODD AFTER EVEN**
 
 Asked in:  <a><img src= "https://img.shields.io/badge/-Amazon-red" height="25">&nbsp;&nbsp;
 <img src= "https://img.shields.io/badge/-GeekforGeeks-darkgreen">&nbsp;&nbsp;
