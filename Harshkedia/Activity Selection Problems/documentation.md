@@ -48,4 +48,5 @@ The first line consists of an integer N, the number of activities. Then the next
                       
         
            
- >>Time complexity : **O( n * k ).**  & Auxiliary Space : **O(n).**.
+  >>Time complexity : **O(n log n) **  & Auxiliary Space : **O(1).**.
+
