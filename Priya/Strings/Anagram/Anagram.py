@@ -1,5 +1,5 @@
 def isAnagram(a,b):
-    #check the length of the both strings 
+   #check the length of the both strings 
     if len (a)!=len (b):
         return False
     #sort the both strings    
