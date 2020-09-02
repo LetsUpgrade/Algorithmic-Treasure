@@ -22,7 +22,7 @@ def deleteMid(head):
     return head;
 
 
-#Driver's code
+# Driver's code
 class Node:
     def __init__(self,data):
         self.data = data
