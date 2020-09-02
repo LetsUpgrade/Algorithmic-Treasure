@@ -1,7 +1,7 @@
 def first_repeating(n,arr):
     #initialize with the minimum index possible
     Min = -1
-    #create a empty dictionary
+ #create a empty dictionary
     newSet = dict()
 
     # tranversing the array elments from end
