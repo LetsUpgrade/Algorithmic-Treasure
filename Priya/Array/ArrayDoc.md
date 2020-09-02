@@ -1,15 +1,7 @@
-<html>
-<head> ## DOCUMENTATION  ##</head>
-
-<body>
-<div>
-<p> <b>**Algorithmic Treasure ** </b></p>
+ ## DOCUMENTATION
+ ## Algorithmic Treasure
 <p><b>**Project ID: 19**</b></p>
-</div>
-<div>
-
-
-<p> <b> All the algorithms are coded in Python Language</b></p>
+ <p> <b> All the algorithms are coded in Python Language</b></p>
 <p><b> Solution:Question 1 </b> </p>
  <p> 1.  Optimized Approach:- <br>
     The program is solved using function <br>
