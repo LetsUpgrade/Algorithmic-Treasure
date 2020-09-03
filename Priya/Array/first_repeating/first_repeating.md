@@ -1,6 +1,5 @@
  ## DOCUMENTATION
- ## Algorithmic Treasure
- ## Project ID: 19
+
  ## All the algorithms are coded in Python Language
 ## First Repeatng Element 
 <img src="https://img.shields.io/badge/-Amazon-blue" height="25">&nbsp;&nbsp;<img src= "https://img.shields.io/badge/-Oracle-green" height="25">&nbsp;&nbsp;<br>
