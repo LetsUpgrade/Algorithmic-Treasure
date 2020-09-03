@@ -26,6 +26,6 @@ def first_repeating(n,arr):
 
 arr = [10, 5, 3, 4, 3, 5, 6] 
   
-n = len(arr) 
+n = len(arr)
 print(first_repeating(n,arr)) 
         
