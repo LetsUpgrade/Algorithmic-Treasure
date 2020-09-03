@@ -37,11 +37,3 @@
    else:   <br>
    myset[arr[x]] = 1   <br>
    print(arr[min], min)  <br>
-            
-  
-  
-  
-  
-  
-
-  
