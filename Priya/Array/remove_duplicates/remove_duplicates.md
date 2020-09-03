@@ -1,7 +1,7 @@
 ## DOCUMENTATION
 
 ## All the algorithms are coded in Python Language
-## First Repeatng Element 
+## Remove Duplicate element from the sorted array
 <img src="https://img.shields.io/badge/-Morgan Stanley-purple" height="30">&nbsp;&nbsp;
 <img src= "https://img.shields.io/badge/-Samsung-green" height="30">&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/-Wipro-yellow" height="30">&nbsp;&nbsp;
@@ -23,8 +23,8 @@
     if the current element  is not equal to the next element of the array then , store the element in a temporary list  <br>
     store the temporary assigned list to the original array and print the unique elements
   ## Time and Space complexity  <br>
-    Time Complexity :- O(n)<br>
-         Space Complexity:- O(1)
+   Time Complexity :- O(n)<br>
+   Space Complexity:- O(1)
   ##  Pseudocode <br>
    y=0          <br>
    for x in 0...len(arr): <br>
