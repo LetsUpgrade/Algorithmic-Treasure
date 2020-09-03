@@ -21,7 +21,7 @@
     a dictionary is declared <br>
     a loop will transverse through the array from right to left  <br>
     if the element is  present in the dictionary then <br>
-    update the **min** <br>
+    update the **Min** <br>
     and if the element is not present ,then add the element in the dictionary<br>
     print the element with its index number.<br>
     
