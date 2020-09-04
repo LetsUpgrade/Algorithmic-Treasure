@@ -39,36 +39,3 @@ If the input linked list is NULL or has 1 node, then it should return NULL <br>
   i  =i.next   <br>
   prev.next = i.next <br>
   return head 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
