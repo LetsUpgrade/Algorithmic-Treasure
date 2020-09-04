@@ -1,7 +1,7 @@
  ## DOCUMENTATION
-## Sort a Stack
+
  ## All the algorithms are coded in Python Language
-##   
+ ## Sort a Stack 
 <img src="https://img.shields.io/badge/-Amazon-red" height="30">&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/-Goldman Sachs-yellow" height="30">&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/-IBM-orange" height="30">&nbsp;&nbsp;
