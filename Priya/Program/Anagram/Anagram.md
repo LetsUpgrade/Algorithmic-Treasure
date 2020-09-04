@@ -9,44 +9,27 @@
 
   Two strings a and b consisting of lowercase characters are given.<br>
   Check whether two given strings are an anagram of each other or not. <br>
-  **Note8** : An anagram of a string is another string that contains the same characters, only the order of characters can be different. <br>
+  **Note:**  An anagram of a string is another string that contains the same characters, only the order of characters can be different. <br>
 
           Sample :
-         Input: [10 -> 7 -> 11-> 12-> 6]   
-          Output:[ 6 -> 7 -> 10-> 11-> 12]  
+        Input: a = "restful" b = " fluster " 
+        Output: True 
      
   ## Solution : <br>
   ## Optimized Approach:- <br>
-  a temporary variable **Pivot** will store the element of the very first node  <br>
-  Traverse the loop through the list and store the values to the **left side**  of the pivot value which are less than pivot <br>
-  and store the values to the **right side** of the pivot value which are greater than pivot   <br>
-  Now the value of pivot is located to it desired position  <br>
-  Store the value of the pivot  <br>
-  Now, sort the elements before the pivot value  and after the pivot value in the same manner as done before by calling the functions. <br>
-  Finally print the sorted list  
+  (i) check the length of the both strings  <br>
+  (ii) check each alphabet of the both strings <br>  
   
     
   ## Time and Space complexity  <br>
-  Time Complexity : O(n^2) [Worst Case]<br>
-                    O(n log n) [ Average case]<br>
-  Space Complexity : O(1) <br>
+ Time Complexity :- O(n)<br>
+ Space Complexity:- O(Number of distinct characters)
   ##  Pseudocode <br>
-  
-partition(a,lb,il)<br>
-           Pivot =a[lb] <br>
-           i=lb <br>
-           j= ub <br>
-           while (i<j): <br>
-             while(a[i] <=Pivot ) : <br>
-                i++ <br>
-             while(a[j]> pivot  ):<br>
-                 j--   <br>  <br>
-             Swap (a[i],a[j])
-            Swap(a[pivot],a[j])
-            return end 
-            
-   QuickSort(a,lb,ub)<br>
-            if (lb<ub)<br>
-             loc = Partition (a,lb,ub)<br>
-          QuickSort(a,lb,loc-1)<br>
-          QuickSort(a,loc+1,ub)<br>
+   Accept two strings (a,b) <br>
+   check if the lenght (a) != (b) <br>
+   then return False  <br>
+   else : sort the array a and store it in a; sort array b and store it in a  <br>
+       for i=0 ....len(a) <br>
+           if(a[i] == b[i]) <br>
+              return True  <br>
+               else: return False  <br>
