@@ -50,7 +50,7 @@ partition(a,lb,il)<br>
                  j--   <br>  <br>
              Swap (a[i],a[j])
             Swap(a[pivot],a[j])
-            return end 
+            return end
             
    QuickSort(a,lb,ub)<br>
             if (lb<ub)<br>
