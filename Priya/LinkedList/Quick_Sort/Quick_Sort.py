@@ -106,4 +106,4 @@ if __name__ == '__main__':
         resHead=quickSortRec(ll.head)
         printList(resHead,dic)  #verifying and printing
         print()
-        
+       
