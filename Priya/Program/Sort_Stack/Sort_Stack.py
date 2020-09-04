@@ -32,7 +32,7 @@ def isEmpty( s ):
     return len(s) == 0
   
 # Function to push an  
-# item to stack 
+# item to stack
 def push( s, item ): 
     s.append( item ) 
   
