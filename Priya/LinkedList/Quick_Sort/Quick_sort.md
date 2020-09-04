@@ -29,7 +29,7 @@
   and store the values to the **right side** of the pivot value which are greater than pivot   <br>
   Now the value of pivot is located to it desired position  <br>
   Store the value of the pivot  <br>
-  Now, sort the elements before the pivot value  and after the pivot value in the same manner as done before by calling the functions. <br>
+  Now, sort the elements before the pivot value and after the pivot value in the same manner as done before by calling the functions. <br>
   Finally print the sorted list  
   
     
