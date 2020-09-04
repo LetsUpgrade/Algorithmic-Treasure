@@ -1,5 +1,5 @@
  ## DOCUMENTATION
-
+## Sort a Stack
  ## All the algorithms are coded in Python Language
 ##   
 <img src="https://img.shields.io/badge/-Amazon-red" height="30">&nbsp;&nbsp;
@@ -11,7 +11,7 @@
 
 
 ### Problem Statement
-   A stack is given. Sort the stach such that the top of the stack has the greatest element.
+   A stack is given. Sort the stack such that the top of the stack has the greatest element.
           
         Sample :
         Input:  10 2 45 3 7
