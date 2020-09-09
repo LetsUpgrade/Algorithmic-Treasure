@@ -14,7 +14,7 @@
   ## Solution : <br>
   ## Optimized Approach:- <br>
    The program is solved using function <br>
-   **remove_duplicate** function is declared with two arguments( arr : a array which stores  the elements , n: size of the array) <br>
+   **first_repeating** function is declared with two arguments( arr : a array which stores  the elements , n: size of the array) <br>
     the whole logic behind the program is that : <br>
     **Min** is initialized to its minimum value (-1) <br>
     a dictionary is declared <br>
