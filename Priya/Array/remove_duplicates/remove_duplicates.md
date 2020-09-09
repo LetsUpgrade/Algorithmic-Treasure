@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/-Xome-blue" height="30">&nbsp;&nbsp;
 <img src="https://img.shields.io/badge/-Zoho-red" height="30">&nbsp;&nbsp;<br>
 ### Problem Statement
-   A sorted array **arr**of size **n**. T
+   A sorted array **arr**of size **n** is given . 
     Print the new array **arr[]** with no duplicate element.<br>
            
            Sample :
