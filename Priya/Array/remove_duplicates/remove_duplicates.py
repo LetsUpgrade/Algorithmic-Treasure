@@ -30,9 +30,7 @@ def remove_duplicate(n,arr):
 
 arr = [1,2,2,4,5,7]
 n=len(arr)
-n = remove_duplicate(n,arr)
-for x in range(n):
-    print(arr[x], end=" ")
-print()
+print( remove_duplicate(n,arr))
+
     
 
