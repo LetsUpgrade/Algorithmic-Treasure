@@ -100,7 +100,7 @@ Search while l <= u:
 					Update u = mid - 1
 		IF No:
 			Update l = mid + 1
-	Return -1
+Return -1
 ```
 
 #### C++ Function Implementation
