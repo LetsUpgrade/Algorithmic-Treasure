@@ -28,8 +28,6 @@ def pop():
         return -1
 
 #Driver's code
-
-
 import atexit
 import io
 import sys
@@ -63,21 +61,3 @@ if __name__ == '__main__':
         q1 = []
         q2 = []
         print()
-        
-        
-        
-   
-
-
-
-
-
-
-
-
-
-
-   
-    
-    
-  
