@@ -11,7 +11,7 @@ def remove_duplicate(n,arr):
     y = 0; 
     for x in range(0, n-1):
 
-# if the present element is not equal to the incremented element
+#if the present element is not equal to the incremented element
 #then store the present element in temporary list and
 #increment the j value
         if arr[x] != arr[x+1]: 
@@ -30,9 +30,7 @@ def remove_duplicate(n,arr):
 
 arr = [1,2,2,4,5,7]
 n=len(arr)
-n = remove_duplicate(n,arr)
-for x in range(n):
-    print(arr[x], end=" ")
-print()
+print( remove_duplicate(n,arr))
+
     
 

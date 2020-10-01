@@ -103,7 +103,7 @@ if __name__ == '__main__':
         dic=defaultdict(list)   # dictonary to keep data and id of node
         nodeID(ll.head,dic)     # putting data and its id
         
-        resHead=quickSort(ll.head)
+        resHead=quickSortRec(ll.head)
         printList(resHead,dic)  #verifying and printing
         print()
-        
+     
